@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmander Pokémon Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+
+        .pokemon-card {
+            width: 320px;
+            border: 5px solid #f44336;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .basic {
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: black;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .hp {
+            background-color: yellow;
+            color: black;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .pokemon-image {
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+
+        .pokemon-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .move {
+            margin-top: 10px;
+            background-color: #fdd835;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .move h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .move p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .card-footer {
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            border-top: 2px solid #ccc;
+        }
+
+        .footer-section {
+            margin-bottom: 5px;
+        }
+
+        .footer-section span {
+            display: inline-block;
+            padding: 5px;
+            background-color: #fff;
+            color: #f44336;
+            border-radius: 5px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="pokemon-card">
+        <span class="basic">Basic Pokémon</span> <!-- Moved outside the card-header -->
+        <div class="card-header">
+            <h2>Charmander</h2>
+            <span class="hp">HP 70</span>
+        </div>
+        <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander">
+        <div class="pokemon-details">
+            <p><strong>Type:</strong> Fire</p>
+            <div class="move">
+                <h3>Ember <span style="float: right;">40</span></h3>
+                <p>Discard an Energy from this Pokémon.</p>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="footer-section">
+                <strong>Weakness:</strong> <span>×2</span>
+            </div>
+            <div class="footer-section">
+                <strong>Resistance:</strong> <span>None</span>
+            </div>
+            <div class="footer-section">
+                <strong>Retreat Cost:</strong> <span>1 Energy</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
